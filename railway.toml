@@ -2,6 +2,7 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "playwright install chromium && python src/booking.py"
+startCommand = "playwright install && playwright install-deps && python src/booking.py"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 3
+
